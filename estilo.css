@@ -1,0 +1,24 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+    
+ Body{
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+     p{
+        color:purple;
+        font-size: 64px;
+        font-family: "Playwrite NO", cursive;
+        margin: 0;
+    }
+
+    h1{
+        color:purple;
+        font-size: 30px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 300;
+        margin: 0;
+    }
