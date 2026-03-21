@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -69,6 +70,37 @@ background-color: white;
     margin-bottom: 20px;
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +120,14 @@ background-color: white;
     font-size: 12px;
     color: #555;
     font-weight: 700;
+    text-align: center;
+    padding: 5px;
+}
+
+.tech-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .cv-button-container {
@@ -114,24 +154,22 @@ background-color: white;
     box-shadow: 0px 7px 0px #888;
 }
 
-.project-card {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    border: 1px solid #ffff;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 40px 8px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.project-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
-}
+@media (max-width: 768px) {
+    #hero-wrapper h1 {
+        font-size: 72px;
+    }
 
-@media (max-width: 400px) {
-    body {
-        background-color: rebeccapurple;
+    #hero-wrapper img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .content-section {
+        padding: 40px 15px;
+    }
+
+    .content-section h2 {
+        font-size: 40px;
     }
 }
